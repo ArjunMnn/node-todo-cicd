@@ -2,6 +2,8 @@ version: '3.9'
 
 services:
   web:
-    image: "arjunmmnn/node-todo:latest"
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8000:8000"
